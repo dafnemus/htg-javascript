@@ -50,9 +50,6 @@ main {
   font-weight: bold;
 }
 
-.comment--text {
-  font-weight: ;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
