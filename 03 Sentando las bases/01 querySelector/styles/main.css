@@ -54,8 +54,25 @@ main {
 @media (prefers-color-scheme: dark) {
   :root {
     --article-bg-color: #333;
-    --article-shadow-color: rgba(0, 0, 0, .3);
+    --article-shadow-color: rgba(241, 240, 241, 0.3);
     --bg-color: #222;
     --font-color: #AAA;
   }
+}
+.separador{
+  height: 30px;
+  border-style: dotted;
+  border-color: purple;
+  border-width: 5px 0 0 0;
+  text-align: center;
+  margin: 56px;
+}
+.favorito{
+  color: rgb(97, 30, 173);
+  background-color: rgba(233, 208, 240, 0.712);
+  font-size: 140%;
+
+}
+.text{
+  display: none;
 }
