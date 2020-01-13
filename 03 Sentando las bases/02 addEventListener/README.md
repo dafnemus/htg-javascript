@@ -30,7 +30,7 @@ Elegí una de las problemáticas que identificaste y pensá causas que la genere
 
 ### Ejercicio 1
 
-Usar el método `.addEventListener` para interceptar los ca,bios que ocurren en el campo de texto de nombre.
+Usar el método `.addEventListener` para interceptar los cambios que ocurren en el campo de texto de nombre.
 - Hacer que si el nombre es menor a 4 caracteres o mayor a 50 caracteres muestre un mensaje de error que diga "El nombre debe ser entre 5 y 50 caracteres"
 
 ### Ejercicio 2

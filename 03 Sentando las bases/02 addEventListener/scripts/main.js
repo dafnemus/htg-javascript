@@ -9,7 +9,10 @@ function recibirNombre(event) {
 }
 
 function interceptarNombre(event) {
-  console.log(event.target.value);
+  
+  if(event.target.value.length<4 || event.target.value.length>50){
+    console.log('El nombre debe ser entre 5 y 50 caracteres')
+  }
 }
 
 formulario.addEventListener('submit', recibirNombre);
