@@ -1,0 +1,5 @@
+Diego.
+
+Solución:
+
+Una App donde se pueda saber cuando llega cada carta y saber quien la retira, ya sea uno mismo o un tercero. De la cual las dos sedes controlen la info y que los usuarios validen cuando la carta llegue a sus manos. 
