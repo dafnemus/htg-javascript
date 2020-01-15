@@ -12,9 +12,8 @@ function recibirNombre(event) {
   console.log(event);
    formulario.textContent = 'Su comentario se ha enviado con éxito';
    formulario.style.color = 'purple';
-  comentarioUsuario.textContent = inputNombre.value;
-  comentarioUsuario.textContent = inputSolucion.value;
-
+  comentarioUsuario.textContent = 'Me ayudó:'+ ' ' + inputNombre.value + '  ' + 'Solución:' + ' ' + inputSolucion.value;
+ 
 }
 
 function interceptarNombre(event) {
@@ -32,3 +31,4 @@ formulario.addEventListener('submit', recibirNombre);
 inputNombre.addEventListener('input', interceptarNombre);
 mensaje.addEventListener('span', interceptarNombre);
 inputSolucion.addEventListener('input', inputSolucion);
+
