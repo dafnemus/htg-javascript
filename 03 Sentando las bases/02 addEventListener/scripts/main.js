@@ -5,17 +5,23 @@ const inputNombre = document.querySelector('#input-nombre');
 const mensaje = document.querySelector('.mensaje-error');
 const inputSolucion = document.querySelector('#input-solucion');
 const comentarioUsuario = document.querySelector('#comentario');
-
+const enviado = document.querySelector('.enviado');
 
 function recibirNombre(event) {
+  let comentario = document.createElement('p');
   event.preventDefault();
   console.log(event);
-   formulario.textContent = 'Su comentario se ha enviado con éxito';
-   formulario.style.color = 'purple';
-  comentarioUsuario.textContent = 'Me ayudó:'+ ' ' + inputNombre.value + '  ' + 'Solución:' + ' ' + inputSolucion.value;
- 
-}
+  enviado.textContent = 'Su comentario se ha enviado con éxito';
+  enviado.style.color = 'purple';
+  comentario.textContent = 'Me ayudó:'+ ' ' + inputNombre.value + '  ' + 'Solución:' + ' ' + inputSolucion.value;
+  comentarioUsuario.appendChild(comentario);
+  
+   inputNombre.value = '';
+   inputSolucion.value = '';
 
+  }
+  
+   
 function interceptarNombre(event) {
   
   if(event.target.value.length<4 || event.target.value.length>50){
@@ -31,4 +37,4 @@ formulario.addEventListener('submit', recibirNombre);
 inputNombre.addEventListener('input', interceptarNombre);
 mensaje.addEventListener('span', interceptarNombre);
 inputSolucion.addEventListener('input', inputSolucion);
-
+enviado.addEventListener('span', recibirNombre);
