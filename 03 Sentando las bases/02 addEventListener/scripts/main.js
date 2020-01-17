@@ -6,6 +6,11 @@ const mensaje = document.querySelector('.mensaje-error');
 const inputSolucion = document.querySelector('#input-solucion');
 const comentarioUsuario = document.querySelector('#comentario');
 const enviado = document.querySelector('.enviado');
+const cursor = document.getElementById('#cursor');
+
+function animarCursor(event){
+
+}
 
 function recibirNombre(event) {
   let comentario = document.createElement('p');
@@ -35,6 +40,4 @@ function interceptarNombre(event) {
 
 formulario.addEventListener('submit', recibirNombre);
 inputNombre.addEventListener('input', interceptarNombre);
-mensaje.addEventListener('span', interceptarNombre);
-inputSolucion.addEventListener('input', inputSolucion);
-enviado.addEventListener('span', recibirNombre);
+cursor.addEventListener('mousemove', animarCursor);

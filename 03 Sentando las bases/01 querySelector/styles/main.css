@@ -59,3 +59,13 @@ main {
   }
 }
 
+#cursor{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid purple;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: translate(-50%,-50%);
+
+}
