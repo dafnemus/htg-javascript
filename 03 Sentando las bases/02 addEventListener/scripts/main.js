@@ -38,6 +38,13 @@ function interceptarNombre(event) {
   }
 }
 
+function pantalla(event){
+ let resolucion = '';
+ if(resolucion.screen.width <300 || resolucion.screen.heith <400 ){
+
+ }
+}
+
 formulario.addEventListener('submit', recibirNombre);
 inputNombre.addEventListener('input', interceptarNombre);
 cursor.addEventListener('mousemove', animarCursor);
