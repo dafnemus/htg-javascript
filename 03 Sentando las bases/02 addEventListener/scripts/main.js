@@ -7,9 +7,10 @@ const inputSolucion = document.querySelector('#input-solucion');
 const comentarioUsuario = document.querySelector('#comentario');
 const enviado = document.querySelector('.enviado');
 const cursor = document.getElementById('#cursor');
+let resolucion = document.querySelector('');
 
 function animarCursor(event){
-
+cursor.onmousemove='';
 }
 
 function recibirNombre(event) {
@@ -20,7 +21,9 @@ function recibirNombre(event) {
   enviado.style.color = 'purple';
   comentario.textContent = 'Me ayudó:'+ ' ' + inputNombre.value + '  ' + 'Solución:' + ' ' + inputSolucion.value;
   comentarioUsuario.appendChild(comentario);
-  
+  setTimeout(function(){ enviado.textContent=null; 
+    
+  }, timeout);
    inputNombre.value = '';
    inputSolucion.value = '';
 
@@ -39,8 +42,8 @@ function interceptarNombre(event) {
 }
 
 function pantalla(event){
- let resolucion = '';
  if(resolucion.screen.width <300 || resolucion.screen.heith <400 ){
+   resolucion.textContent='la pantalla es demasiado chica';
 
  }
 }
@@ -48,3 +51,4 @@ function pantalla(event){
 formulario.addEventListener('submit', recibirNombre);
 inputNombre.addEventListener('input', interceptarNombre);
 cursor.addEventListener('mousemove', animarCursor);
+resolucion.addEventListener('', pantalla);
